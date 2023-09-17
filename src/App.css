@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Add transitions for smoother effects */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #880808;
+  min-height: 100vh; /* Use min-height to ensure the header takes up at least the viewport height */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  opacity: 1;
+  transition: opacity 1s ease;
 }
 
-.App-link {
-  color: #61dafb;
+/* Navbar and White Page Transition */
+.Navbar {
+  height: 0;
+  overflow: hidden;
+  transition: height 1s ease; /* Add height transition */
 }
 
-@keyframes App-logo-spin {
+.White-page {
+  background-color: white;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: height 1s ease; /* Add height transition */
+}
+
+/* Animation for expanding the Navbar and White Page */
+@keyframes expandAnimation {
   from {
-    transform: rotate(0deg);
+    height: 0;
   }
   to {
-    transform: rotate(360deg);
+    height: 100%;
+  }
+}
+
+/* Animation for expanding the Navbar and White Page */
+.expand {
+  height: 100%;
+}
+
+
+/* Animation for fading in */
+.fade-in {
+  opacity: 1;
+}
+
+/* Animation for fading out */
+.fade-out {
+  opacity: 0;
+}
+
+/* Adjust timing as needed */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
