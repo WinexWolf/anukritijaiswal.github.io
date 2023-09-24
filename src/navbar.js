@@ -15,7 +15,7 @@ function Navbar() {
 
   useEffect(() => {
    const hideLogoTimeout = setTimeout(() => {
-      setShowLogo(true); // Hide the header after 3 seconds
+      setShowLogo(true); 
     }, 500);
 
   }, []);
@@ -38,17 +38,17 @@ function Navbar() {
       </ul>
 
 <ul className='image'>
-         <li><a href="https://www.linkedin.com/in/anukritijaiswal/" target="_blank">
+         <li><a href="https://www.linkedin.com/in/anukritijaiswal/" target="_blank" rel="noreferrer">
   <img src={linkedinicon} height="30" width="30" alt="LinkedIn Icon"/>
 </a></li>
-    <li><a href="mailto:anukritj@andrew.cmu.edu" >
+    <li><a href="mailto:anukritj@andrew.cmu.edu" rel="noreferrer">
   <img src={emailicon} height="30" width="35" alt="Email Icon"/>
 </a></li>
-<li><a href="https://github.com/WinexWolf" target="_blank">
+<li><a href="https://github.com/WinexWolf" target="_blank" rel="noreferrer">
   <img src={githubicon} height="30" width="30" alt="Github Icon"/>
 </a></li>
 
-<li><a href="https://medium.com/@anukritj/" target="_blank">
+<li><a href="https://medium.com/@anukritj/" target="_blank" rel="noreferrer">
   <img src={mediumicon} height="30" width="30" alt="Email Icon"/>
 </a></li>
 

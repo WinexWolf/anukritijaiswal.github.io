@@ -7,6 +7,9 @@
   align-items: center;
   display: flex;
   justify-content: center;
+    position: relative;
+  overflow: hidden;
+  
 }
 
 .img{
@@ -24,4 +27,34 @@
 
 .anukriti-text {
   color: #880808; /* Change to your desired color */
+}
+
+/* Add initial styles for sliding and fading animation */
+.desc {
+  opacity: 0.71;
+  transform: translateX(40px);
+  transition: opacity 2s, transform 2s;
+}
+
+/* Define styles for when the element is visible */
+.desc.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Add styles for the "Get in Touch" button */
+.get-in-touch-button {
+  background-color: #007bff; /* Blue background color (adjust as needed) */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Padding for the button */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth background color transition */
+  font-family:Arial, Helvetica, sans-serif;
+   margin:3% 0;
+  /* Optional: Style the button on hover */
+  &:hover {
+    background-color: #0056b3; /* Darker blue on hover (adjust as needed) */
+  }
 }
