@@ -34,11 +34,11 @@ function App() {
       {!showHeader && (
         <div className={`Navbar ${expandNavbar ? 'expand' : ''}`}>
           <Navbar />
+          <ComingUp/>
         </div>
       )}
       {!showHeader && (
         <div className={`White-page ${expandNavbar ? 'expand' : ''}`}>
-          <ComingUp></ComingUp>
         </div>
       )}
     </div>
