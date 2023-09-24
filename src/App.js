@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import ImageSlider from './imageslider';
-import Navbar from './navbar';
-import ComingUp from './comingup';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import ImageSlider from "./imageslider";
+import Navbar from "./navbar";
+import ComingUp from "./comingup";
+import "./App.css";
+import Contact from "./contact";
 
 function App() {
   const [showHeader, setShowHeader] = useState(true);
@@ -32,15 +33,16 @@ function App() {
         </div>
       )}
       {!showHeader && (
-        <div className={`Navbar ${expandNavbar ? 'expand' : ''}`}>
+        <div className={`Navbar ${expandNavbar ? "expand" : ""}`}>
           <Navbar />
-          <ComingUp/>
+          <ComingUp />
+          <Contact/>
         </div>
       )}
       {!showHeader && (
-        <div className={`White-page ${expandNavbar ? 'expand' : ''}`}>
-        </div>
+        <div className={`White-page ${expandNavbar ? "expand" : ""}`}></div>
       )}
+     
     </div>
   );
 }
