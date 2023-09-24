@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import snitch1 from './snitch1.png';
-import snitch2 from './snitch2.png';
+import snitch1 from './images/snitch1.png';
+import snitch2 from './images/snitch2.png';
 
 function ImageSlider() {
   const [currentImage, setCurrentImage] = useState(snitch1);

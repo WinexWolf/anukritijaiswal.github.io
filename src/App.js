@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ImageSlider from './imageslider';
 import Navbar from './navbar';
+import ComingUp from './comingup';
 import './App.css';
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
         <div className="App-header">
           <ImageSlider />
           <p>
-            <code>Yes</code>
+            <code></code>
           </p>
         </div>
       )}
@@ -37,7 +38,7 @@ function App() {
       )}
       {!showHeader && (
         <div className={`White-page ${expandNavbar ? 'expand' : ''}`}>
-          {/* Content for the white page */}
+          <ComingUp></ComingUp>
         </div>
       )}
     </div>
