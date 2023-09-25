@@ -1,6 +1,7 @@
 // Contact.js
 import React from "react";
 import "./contact.css"; // Import your CSS file for styling
+import "./comingup.css";
 
 function Contact() {
   return (
@@ -40,8 +41,8 @@ function Contact() {
           ></textarea>
         </div>
 
-        <button type="submit" className="submit-button">
-          Send
+        <button className="get-in-touch-button" >
+          <b>Send</b>
         </button>
       </form>
       <form className="contact-form">

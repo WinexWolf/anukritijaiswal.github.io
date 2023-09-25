@@ -1,32 +1,32 @@
 /* Coming up Container */
 .coming-up {
-  background-color: #FFDE59; /* Background color */
-  /* Fixed position at the top of the page */
-  width: 100%; /* Full width */
-  height:100vh; /* Ensure it's above other content */
+  background-color: #FFDE59;
+  width: 100%;
+  height: 100vh;
   align-items: center;
   display: flex;
   justify-content: center;
-    position: relative;
+  position: relative;
   overflow: hidden;
-  
+  padding: 20px; /* Adjust padding for spacing on small screens */
 }
 
-.img{
-    border-radius: 50%;
-    padding:30px;
+.img {
+  border-radius: 50%;
+  padding: 10px; /* Adjust padding for spacing on small screens */
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
 }
 
-.desc{
-    width: 50vw;
-    font-size: 24px;
-    justify-content: center;
-    font-family:Arial, Helvetica, sans-serif;
-    align-items: start;
+.desc {
+  width: 100%; /* Full width for small screens */
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center; /* Center align text on small screens */
+  margin-top: 20px; /* Add margin for spacing on small screens */
 }
 
 .anukriti-text {
-  color: #880808; /* Change to your desired color */
+  color: #880808;
 }
 
 /* Add initial styles for sliding and fading animation */
@@ -44,17 +44,51 @@
 
 /* Add styles for the "Get in Touch" button */
 .get-in-touch-button {
-  background-color: #007bff; /* Blue background color (adjust as needed) */
-  color: #fff; /* Text color */
-  padding: 10px 20px; /* Padding for the button */
-  border: none; /* Remove button border */
-  border-radius: 20px; /* Rounded corners */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  transition: background-color 0.3s; /* Smooth background color transition */
-  font-family:Arial, Helvetica, sans-serif;
-   margin:3% 0;
-  /* Optional: Style the button on hover */
-  &:hover {
-    background-color: #0056b3; /* Darker blue on hover (adjust as needed) */
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 3% 0;
+  max-width: 30%;
+}
+
+/* Optional: Style the button on hover */
+.get-in-touch-button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  /* Apply these styles when the screen width is at most 768px (e.g., mobile devices) */
+  .coming-up {
+    padding: 20px; /* Reduce padding for spacing on small screens */
   }
+
+  .img {
+  border-radius: 50%;
+  padding: 0px; /* Adjust padding for spacing on small screens */
+  width: 40%; 
+  height: 20%;/* Ensure the image doesn't exceed its container */
+}
+
+  .desc {
+    font-size: 20px; /* Decrease font size on small screens */
+  }
+
+  .get-in-touch-button {
+ 
+  max-width: 70%;
+}
+
+.desc {
+  font-size: 18px;
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
 }
