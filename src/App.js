@@ -4,6 +4,7 @@ import Navbar from "./navbar";
 import ComingUp from "./comingup";
 import "./App.css";
 import Contact from "./contact";
+import ImageCarousel from "./imagecarousel";
 
 function App() {
   const [showHeader, setShowHeader] = useState(true);
@@ -36,6 +37,7 @@ function App() {
         <div className={`Navbar ${expandNavbar ? "expand" : ""}`}>
           <Navbar />
           <ComingUp />
+          <ImageCarousel/>
           <Contact/>
         </div>
       )}
