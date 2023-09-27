@@ -7,7 +7,7 @@ import mediumicon from './images/medium.png';
 import linkedinicon from './images/linkedin.png';
 import githubicon from './images/github.png';
 import emailicon from './images/email.png';
-
+import HamburgerMenu from './hamburger';
 
 
 function Navbar() {
@@ -55,7 +55,8 @@ function Navbar() {
 
 
       </ul>
-    </nav>
+<HamburgerMenu></HamburgerMenu> 
+   </nav>
   );
 }
 
