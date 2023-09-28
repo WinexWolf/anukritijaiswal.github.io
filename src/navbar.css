@@ -23,7 +23,8 @@
 }
 
 .navbar li {
-  margin: 10px; /* Add spacing between links */
+  margin: 10px; 
+  cursor: pointer;/* Add spacing between links */
 }
 
 .navbar a {

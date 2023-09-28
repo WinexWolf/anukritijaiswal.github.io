@@ -10,13 +10,17 @@ import image4 from "./images/esn_logo.png";
 const ImageCarousel = () => {
   return (
     <div id="project" className="carousel-container">
-{/*       Projects
- */}      <Carousel
+      {/*       Projects
+      <h2 className="section-title">Skills</h2>
+
+ */}
+      <Carousel
         autoPlay
         showThumbs={false} // Hide thumbnail navigation
         showArrows={true} // Show navigation arrows
         // Set the autoplay interval (in milliseconds)
       >
+        
         <div>
           <img src={image4} alt="Image 1" />
           <p className="">

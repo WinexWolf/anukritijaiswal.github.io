@@ -22,6 +22,12 @@
    border-radius: 60px;
     
 }
+.section-title {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  justify-content: center;
+}
 
 
 .carousel p {

@@ -1,0 +1,91 @@
+.education-section {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.education-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.education-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+  width: 100%;
+  max-width: 450px;
+  overflow: hidden;
+}
+
+.education-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 200px;
+  border-radius: 10px 10px 0 0;
+}
+
+.institution {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 20px 20px 10px;
+}
+
+.degree {
+  font-size: 18px;
+  color: #555;
+  margin: 0 20px 10px;
+}
+
+.year {
+  font-size: 16px;
+  color: #777;
+  margin: 0 20px 20px;
+}
+
+.description {
+  font-size: 18px;
+  margin: 0 20px 20px;
+  color: #444;
+}
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill-item {
+  background-color: #FFDE59;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.education-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
