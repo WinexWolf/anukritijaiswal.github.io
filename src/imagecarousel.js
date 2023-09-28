@@ -9,7 +9,7 @@ import image4 from "./images/esn_logo.png";
 
 const ImageCarousel = () => {
   return (
-    <div className="carousel-container">
+    <div id="project" className="carousel-container">
 {/*       Projects
  */}      <Carousel
         autoPlay

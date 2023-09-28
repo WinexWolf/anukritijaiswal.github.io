@@ -5,40 +5,45 @@ import pwc from "./images/pwc.jpg";
 import cmu from "./images/cmu.png";
 import locknstock from "./images/locknstock.png";
 
+
 const Timeline = () => {
+
   const timelineData = [
     {
-      year: "2010",
-      label: "Event 3",
+      year: "Aug'23- Dec'23",
+      label: "Graduate Teaching Assistant",
       imageSrc: cmu,
-      description: "Description of Event 3 goes here.",
+      description:
+        "Foundations of Software Engineering (18-652) - Fall '23, supporting students and assisting with course activities.",
     },
     {
-      year: "2000",
-      label: "Event 1",
+      year: "Jun'23- Aug'23",
+      label: "Technical Project Management Intern",
       imageSrc: smartTwigs,
-      description: "Description of Event 1 goes here.",
+      description:
+        "Led cross-functional teams, managed project timelines, and provided insights across various software development areas.",
     },
     {
-      year: "2005",
-      label: "Event 2",
+      year: "Jan'22- Dec'22",
+      label: "Consultant(Software Developer)",
       imageSrc: pwc,
-      description: "Description of Event 2 goes here.",
+      description:
+        "Developed a React web portal with Google Maps integration on Azure using Docker and integrated MuleSoft backend data.",
     },
 
     {
-      year: "2015",
-      label: "Event 4",
+      year: "Sep'20- Dec'20",
+      label: "Data Science Intern",
       imageSrc: locknstock,
-      description: "Description of Event 4 goes here.",
-    }
+      description:
+        "Automated analytics with a Dash-powered smart dashboard, integrated ML models for faster decision-making.",
+    },
   ];
 
   return (
-    <div className="timeline">
+    <div id="timeline" className="timeline">
       {timelineData.map((event, index) => (
         <div className="timeline-event" key={index}>
-          <div className="timeline-line"></div>
           <div className="timeline-content">
             <div className="timeline-year">{event.year}</div>
             <h3 className="timeline-label">{event.label}</h3>

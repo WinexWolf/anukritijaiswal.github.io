@@ -23,7 +23,7 @@ function ComingUp() {
   }, []);
 
   return (
-    <div className="coming-up">
+    <div id="about" className="coming-up">
       <img
         className="img"
         src={headshot}
