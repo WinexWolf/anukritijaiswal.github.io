@@ -39,17 +39,17 @@ function Navbar() {
 
 <ul className='image'>
          <li><a href="https://www.linkedin.com/in/anukritijaiswal/" target="_blank" rel="noreferrer">
-  <img src={linkedinicon} height="30" width="30" alt="LinkedIn Icon"/>
+  <img src={linkedinicon} height="25" width="25" alt="LinkedIn Icon"/>
 </a></li>
     <li><a href="mailto:anukritj@andrew.cmu.edu" rel="noreferrer">
-  <img src={emailicon} height="30" width="35" alt="Email Icon"/>
+  <img src={emailicon} height="25" width="30" alt="Email Icon"/>
 </a></li>
 <li><a href="https://github.com/WinexWolf" target="_blank" rel="noreferrer">
-  <img src={githubicon} height="30" width="30" alt="Github Icon"/>
+  <img src={githubicon} height="25" width="25" alt="Github Icon"/>
 </a></li>
 
 <li><a href="https://medium.com/@anukritj/" target="_blank" rel="noreferrer">
-  <img src={mediumicon} height="30" width="30" alt="Email Icon"/>
+  <img src={mediumicon} height="25" width="25" alt="Email Icon"/>
 </a></li>
 
 
