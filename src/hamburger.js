@@ -5,6 +5,50 @@ import linkedinicon from "./images/linkedin.png";
 import githubicon from "./images/github.png";
 import emailicon from "./images/email.png";
 
+
+
+function scrollToContact() {
+  // Find the "Project" section by its ID
+
+  const contactSection = document.getElementById("contact");
+
+  if (contactSection) {
+    // Scroll to the "Contact" section smoothly
+    contactSection.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+function scrollToAbout() {
+  // Find the "About" section by its ID
+  const aboutSection = document.getElementById("about");
+
+  if (aboutSection) {
+    // Scroll to the "Project" section smoothly
+    aboutSection.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+function scrollToExperience() {
+  // Find the "Project" section by its ID
+  const experienceSection = document.getElementById("timeline");
+
+  if (experienceSection) {
+    // Scroll to the "Project" section smoothly
+    experienceSection.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+function scrollToProject() {
+  // Find the "Project" section by its ID
+  const projectSection = document.getElementById("project");
+
+  if (projectSection) {
+    // Scroll to the "Project" section smoothly
+    projectSection.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+
 function HamburgerMenu() {
   const [isActive, setIsActive] = useState(false);
 
@@ -68,19 +112,19 @@ function HamburgerMenu() {
             </li>
           </ul>
           <li>
-            <a href="/about">About</a>
+            <a onClick={scrollToAbout}>About</a>
           </li>
           <li>
-            <a href="/projects">Projects</a>
+            <a onClick={scrollToProject}>Projects</a>
           </li>
           <li>
-            <a href="/experience">Experience</a>
+            <a onClick={scrollToExperience}>Experience</a>
           </li>
           <li>
             <a href="/photography">Photography</a>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <a onClick={scrollToContact}>Contact</a>
           </li>
         </div>
       )}
