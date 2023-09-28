@@ -1,0 +1,58 @@
+/* Timeline container */
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Individual timeline events */
+.timeline-event {
+  flex-basis: calc(20% - 20px);
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.timeline-year {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.timeline-label {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.timeline-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.timeline-description {
+  font-size: 14px;
+}
+
+/* Timeline dots/points */
+.timeline-dot {
+  width: 15px;
+  height: 15px;
+  background-color: #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Add some hover effect for timeline events if desired */
+.timeline-event:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
