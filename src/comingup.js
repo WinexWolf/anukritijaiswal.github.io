@@ -27,8 +27,8 @@ function ComingUp() {
       <img
         className="img"
         src={headshot}
-        height="300"
-        width="300"
+        height="200"
+        width="200"
         alt="Email Icon"
       />
       <div className="desc">

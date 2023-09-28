@@ -8,38 +8,46 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding: 20px; /* Adjust padding for spacing on small screens */
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.3s; /* Add a background color transition */
+}
+
+.coming-up:hover {
+  background-color: #FFC107; /* Change background color on hover */
 }
 
 .img {
   border-radius: 50%;
-  padding: 10px; /* Adjust padding for spacing on small screens */
-  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  padding: 10px;
+  max-width: 100%;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.img:hover {
+  transform: scale(1.1);
 }
 
 .desc {
-  width: 100%; /* Full width for small screens */
+  width: 100%;
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center; /* Center align text on small screens */
-  margin-top: 20px; /* Add margin for spacing on small screens */
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Define styles for when the element is visible */
+.coming-up:hover .desc {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .anukriti-text {
   color: #880808;
-}
-
-/* Add initial styles for sliding and fading animation */
-.desc {
-  opacity: 0.71;
-  transform: translateX(40px);
-  transition: opacity 2s, transform 2s;
-}
-
-/* Define styles for when the element is visible */
-.desc.slide-in {
-  opacity: 1;
-  transform: translateX(0);
 }
 
 /* Add styles for the "Get in Touch" button */
@@ -63,32 +71,22 @@
 
 /* Media Queries for Responsiveness */
 @media screen and (max-width: 768px) {
-  /* Apply these styles when the screen width is at most 768px (e.g., mobile devices) */
   .coming-up {
-    padding: 20px; /* Reduce padding for spacing on small screens */
+    padding: 20px;
   }
 
   .img {
-  border-radius: 50%;
-  padding: 0px; /* Adjust padding for spacing on small screens */
-  width: 40%; 
-  height: 20%;/* Ensure the image doesn't exceed its container */
-}
+    border-radius: 50%;
+    padding: 0;
+    width: 40%;
+    height: 20%;
+  }
 
   .desc {
-    font-size: 20px; /* Decrease font size on small screens */
+    font-size: 20px;
   }
 
   .get-in-touch-button {
- 
-  max-width: 70%;
-}
-
-.desc {
-  font-size: 18px;
-  padding: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
+    max-width: 70%;
+  }
 }
