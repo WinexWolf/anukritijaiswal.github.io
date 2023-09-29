@@ -6,30 +6,27 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_c5uyhac", // Replace with your Email.js service ID
-        "template_qcsa9zf", // Replace with your Email.js template ID
-        e.target,
-        "m7FC9cuQ5_JkSrUQl" // Replace with your Email.js user ID
-      )
-      .then(
-        (result) => {
-          console.log("Email sent successfully:", result.text);
-          alert("Email sent successfully!");
-        },
-        (error) => {
-          console.error("Email could not be sent:", error.text);
-          alert("Email could not be sent. Please try again later.");
-        }
-      );
+    // Replace these with your own Email.js service, template, and user IDs
+    const serviceID = "service_c5uyhac";
+    const templateID = "template_nrg8rul";
+    const userID = "m7FC9cuQ5_JkSrUQl";
+
+    emailjs.sendForm(serviceID, templateID, e.target, userID).then(
+      (result) => {
+        console.log("Email sent successfully:", result.text);
+        alert("Email sent successfully!");
+      },
+      (error) => {
+        console.error("Email could not be sent:", error.text);
+        alert("Email could not be sent. Please try again later.");
+      }
+    );
 
     e.target.reset();
   };
 
   return (
     <div id="contact" className="contact-container">
-      <h2>Contact Me</h2>
       <form className="contact-form" onSubmit={sendEmail}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>

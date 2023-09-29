@@ -8,7 +8,6 @@ import ImageCarousel from "./imagecarousel";
 import Timeline from "./timeline";
 import Skills from "./skills";
 import Education from "./education";
-import { ContactUs } from "./ContactUs";
 
 function App() {
   const [showHeader, setShowHeader] = useState(true);
