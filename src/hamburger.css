@@ -1,0 +1,73 @@
+@media screen and (max-width: 768px) {
+
+
+/* Hamburger menu icon */
+.hamburger-menu {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  justify-content: end;
+  width: auto;
+}
+
+.hamburger-menu:hover {
+  background-color: #555;
+}
+
+/* Icon bars */
+.hamburger-bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  display: flex;
+  transition: 0.4s;
+}
+
+/* Animation for bars when menu is active */
+.hamburger-menu.active .hamburger-bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-menu.active .hamburger-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active .hamburger-bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.hamburger-list {
+  max-width: 40%;
+  height: auto;
+  display: flex;
+  margin-top: 7px;
+  flex-direction:column;
+  transition: 0.4s;
+  padding:10px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 1000;
+  background-color: #fff;
+  margin: 0 -144px;
+  list-style-type: none
+}
+
+.li{
+  display: flex;
+}
+
+}
+
+@media screen and (min-width: 768px) {
+
+
+.hamburger-list {
+  display: none;
+}
+}

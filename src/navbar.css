@@ -2,8 +2,8 @@
 .navbar {
   background-color: #fff;
   padding: 10px 0;
-  width: 100%;
-  z-index: 1000;
+  width: 100vw;
+  z-index: 1;
   height: auto; /* Change to auto for responsiveness */
   display: flex;
   flex-direction: column; /* Change to column for responsiveness on small screens */
@@ -23,7 +23,8 @@
 }
 
 .navbar li {
-  margin: 10px; /* Add spacing between links */
+  margin: 10px; 
+  cursor: pointer;/* Add spacing between links */
 }
 
 .navbar a {
@@ -38,24 +39,19 @@
   color: #ff5733;
 }
 
-/* Media Queries for Responsiveness */
-@media screen and (min-width: 768px) {
-  /* Apply these styles when the screen width is at least 768px (e.g., tablets and larger) */
-  .navbar {
-    flex-direction: row; /* Revert to row layout */
-    justify-content: space-between; /* Space out the logo and links */
-    align-items: center;
-    width: 30%;
-  }
-
+@media screen and (max-width: 768px) {
   .navbar ul {
-    flex-direction: row; /* Display links in a row */
-    padding: 20%;
-  }
+display:none;}
 
-  .navbar li {
-    margin: 0 20px; /* Adjust spacing between links */
-    font-size: 12px;
+.navbar{
+    width: 185vw;
+align-items: center;
+display: flex;
+justify-self: center;
+}
 
-  }
+.image{
+  display: flex;
+}
+
 }
